@@ -4,7 +4,7 @@ var express = require('express'),
 
 // Index
 router.get('/', function(req, res) {
-	res.send('index');
+	res.render('index.ejs');
 });
 
 
