@@ -11,13 +11,13 @@ mongoose.connect('mongodb://localhost/grocery_app_dev', function(err) {
 
 var product1 = new Product({
 	name: 'Bread',
-	description: 'Get a loaf of crusty bread to dip into soup'
+	description: 'Get a loaf of crusty bread to dip into soup',
 	active: true
 });
 
 var product2 = new Product({
 	name: 'Eggs',
-	description: 'Jumbo cage free!'
+	description: 'Jumbo cage free!',
 	active: true
 });
 
@@ -40,17 +40,17 @@ product1.save(function(err) {
 
 product2.save(function(err) {
 	if(err) return handleError(err);
-	console.log('saved: ' + product1.name);
+	console.log('saved: ' + product2.name);
 });
 
 product3.save(function(err) {
 	if(err) return handleError(err);
-	console.log('saved: ' + product1.name);
+	console.log('saved: ' + product3.name);
 });
 
 product4.save(function(err) {
 	if(err) return handleError(err);
-	console.log('saved: ' + product1.name);
+	console.log('saved: ' + product4.name);
 });
 
 console.log('==============================');
