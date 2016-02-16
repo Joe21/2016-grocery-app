@@ -1,7 +1,8 @@
 var mongoose = require('mongoose'),
 	Product = require('./models/products.js');
 
-mongoose.connect('mongodb://localhost/grocery_app_dev', function(err) {
+var mongoUri =  process.env.MONGOLAB_URI || 'mongodb://localhost/grocery_app_dev';
+mongoose.connect('mongoUri', function(err) {
 	if(err) {
 		console.log('Connection error: ', error);
 	} else {
