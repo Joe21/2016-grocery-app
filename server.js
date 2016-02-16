@@ -6,6 +6,7 @@ var express = require('express'),
 	logger = require('morgan'),
 	bodyParser = require('body-parser'),
 	methodOverride = require('method-override'),
+	expressLayouts = require('express-ejs-layouts'),
 	port = process.env.PORT || 3000;
 
 
@@ -22,7 +23,10 @@ app.use(methodOverride(function(req, res){
     return method;
   }
 }));
+app.set('view engine', 'ejs');
+app.set('layout', 'layout.ejs');
 
+app.use(expressLayouts);
 
 // DB
 // --------------------------------------------
