@@ -30,7 +30,8 @@ app.use(expressLayouts);
 
 // DB
 // --------------------------------------------
-mongoose.connect('mongodb://localhost/grocery_app_dev');
+var mongoUri =  process.env.MONGOLAB_URI || 'mongodb://localhost/grocery_app_dev';
+mongoose.connect(mongoUri);
 
 
 // MODELS

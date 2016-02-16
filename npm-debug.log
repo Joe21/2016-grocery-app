@@ -1,0 +1,195 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'foreman' ]
+2 info using npm@2.14.3
+3 info using node@v4.0.0
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'foreman', null ]
+7 verbose cache add spec foreman
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'foreman',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'foreman',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed foreman@*
+10 verbose addNamed "*" is a valid semver range for foreman
+11 silly addNameRange { name: 'foreman', range: '*', hasData: false }
+12 silly mapToRegistry name foreman
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/foreman
+16 verbose addNameRange registry:https://registry.npmjs.org/foreman not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/foreman
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 12:19:40 PM
+20 verbose request id 7f49874500accfc3
+21 verbose etag "AMIVJ1649C48TJ1E59408R5BD"
+22 http request GET https://registry.npmjs.org/foreman
+23 http 304 https://registry.npmjs.org/foreman
+24 silly get cb [ 304,
+24 silly get   { date: 'Tue, 16 Feb 2016 17:19:40 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     'cache-control': 'max-age=300',
+24 silly get     etag: '"AMIVJ1649C48TJ1E59408R5BD"',
+24 silly get     age: '0',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-iad2130-IAD',
+24 silly get     'x-cache': 'HIT',
+24 silly get     'x-cache-hits': '1',
+24 silly get     'x-timer': 'S1455643180.252803,VS0,VE15',
+24 silly get     vary: 'Accept' } ]
+25 verbose etag https://registry.npmjs.org/foreman from cache
+26 verbose get saving foreman to /Users/josephjung/.npm/registry.npmjs.org/foreman/.cache.json
+27 silly addNameRange number 2 { name: 'foreman', range: '*', hasData: true }
+28 silly addNameRange versions [ 'foreman',
+28 silly addNameRange   [ '0.0.0',
+28 silly addNameRange     '0.0.1',
+28 silly addNameRange     '0.0.2',
+28 silly addNameRange     '0.0.3',
+28 silly addNameRange     '0.0.4',
+28 silly addNameRange     '0.0.5',
+28 silly addNameRange     '0.0.6',
+28 silly addNameRange     '0.0.8',
+28 silly addNameRange     '0.0.9',
+28 silly addNameRange     '0.0.10',
+28 silly addNameRange     '0.0.11',
+28 silly addNameRange     '0.0.12',
+28 silly addNameRange     '0.0.13',
+28 silly addNameRange     '0.0.14',
+28 silly addNameRange     '0.0.15',
+28 silly addNameRange     '0.0.16',
+28 silly addNameRange     '0.0.17',
+28 silly addNameRange     '0.0.18',
+28 silly addNameRange     '0.0.19',
+28 silly addNameRange     '0.0.20',
+28 silly addNameRange     '0.0.21',
+28 silly addNameRange     '0.0.22',
+28 silly addNameRange     '0.0.23',
+28 silly addNameRange     '0.0.24',
+28 silly addNameRange     '0.0.25',
+28 silly addNameRange     '0.0.26',
+28 silly addNameRange     '0.0.27',
+28 silly addNameRange     '0.1.0',
+28 silly addNameRange     '0.1.1',
+28 silly addNameRange     '0.1.2',
+28 silly addNameRange     '0.2.0',
+28 silly addNameRange     '0.2.1',
+28 silly addNameRange     '0.3.0',
+28 silly addNameRange     '0.4.0',
+28 silly addNameRange     '0.4.1',
+28 silly addNameRange     '0.4.2',
+28 silly addNameRange     '1.0.0',
+28 silly addNameRange     '1.1.0',
+28 silly addNameRange     '1.2.0',
+28 silly addNameRange     '1.2.1',
+28 silly addNameRange     '1.3.0',
+28 silly addNameRange     '1.4.0',
+28 silly addNameRange     '1.4.1',
+28 silly addNameRange     '2.0.0-0' ] ]
+29 silly addNamed foreman@1.4.1
+30 verbose addNamed "1.4.1" is a plain semver version for foreman
+31 silly cache afterAdd foreman@1.4.1
+32 verbose afterAdd /Users/josephjung/.npm/foreman/1.4.1/package/package.json not in flight; writing
+33 verbose afterAdd /Users/josephjung/.npm/foreman/1.4.1/package/package.json written
+34 silly install resolved [ { name: 'foreman',
+34 silly install resolved     version: '1.4.1',
+34 silly install resolved     homepage: 'http://strongloop.github.io/node-foreman/',
+34 silly install resolved     description: 'Node Implementation of Foreman',
+34 silly install resolved     author: { name: 'StrongLoop, Inc.' },
+34 silly install resolved     license: 'MIT',
+34 silly install resolved     keywords: [ 'foreman', 'upstart', 'commandline', 'env', 'Procfile' ],
+34 silly install resolved     bin: { nf: 'nf.js' },
+34 silly install resolved     files: [ 'forward.js', 'nf.js', 'proxy.js', 'lib/' ],
+34 silly install resolved     scripts:
+34 silly install resolved      { test: 'tap test',
+34 silly install resolved        lint: 'jshint *.js lib/*.js',
+34 silly install resolved        travis: 'npm test && npm run lint' },
+34 silly install resolved     dependencies:
+34 silly install resolved      { commander: '~2.1.0',
+34 silly install resolved        'http-proxy': '~1.11.1',
+34 silly install resolved        mu2: '~0.5.20',
+34 silly install resolved        'shell-quote': '~1.4.2' },
+34 silly install resolved     repository:
+34 silly install resolved      { type: 'git',
+34 silly install resolved        url: 'git+https://github.com/strongloop/node-foreman.git' },
+34 silly install resolved     bugs:
+34 silly install resolved      { url: 'https://github.com/strongloop/node-foreman/issues',
+34 silly install resolved        email: 'callback@strongloop.com' },
+34 silly install resolved     engines: { node: '>=0.6.9' },
+34 silly install resolved     preferGlobal: true,
+34 silly install resolved     devDependencies:
+34 silly install resolved      { chai: '~1.9.1',
+34 silly install resolved        jshint: '^2.6.3',
+34 silly install resolved        rimraf: '~2.2.8',
+34 silly install resolved        tap: '~0.4.8' },
+34 silly install resolved     gitHead: '29da533f9b62d628bd722367c54b7c6fec584af3',
+34 silly install resolved     _id: 'foreman@1.4.1',
+34 silly install resolved     _shasum: '58b61fb6d814c694ddf2fb75b0573606257b10e3',
+34 silly install resolved     _from: 'foreman@*',
+34 silly install resolved     _npmVersion: '2.11.1',
+34 silly install resolved     _nodeVersion: '2.2.1',
+34 silly install resolved     _npmUser: { name: 'rmg', email: 'r.m.graham@gmail.com' },
+34 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+34 silly install resolved     dist:
+34 silly install resolved      { shasum: '58b61fb6d814c694ddf2fb75b0573606257b10e3',
+34 silly install resolved        tarball: 'http://registry.npmjs.org/foreman/-/foreman-1.4.1.tgz' },
+34 silly install resolved     directories: {},
+34 silly install resolved     _resolved: 'https://registry.npmjs.org/foreman/-/foreman-1.4.1.tgz',
+34 silly install resolved     readme: 'ERROR: No README data found!' } ]
+35 info install foreman@1.4.1 into /usr/local/lib
+36 info installOne foreman@1.4.1
+37 verbose installOne of foreman to /usr/local/lib not in flight; installing
+38 verbose lock using /Users/josephjung/.npm/_locks/foreman-97494eb38f3bd7df.lock for /usr/local/lib/node_modules/foreman
+39 silly install write writing foreman 1.4.1 to /usr/local/lib/node_modules/foreman
+40 verbose unbuild lib/node_modules/foreman
+41 silly gentlyRm /usr/local/lib/node_modules/foreman is being purged from base /usr/local
+42 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/foreman
+43 verbose tar unpack /Users/josephjung/.npm/foreman/1.4.1/package.tgz
+44 verbose tar unpacking to /usr/local/lib/node_modules/foreman
+45 silly gentlyRm /usr/local/lib/node_modules/foreman is being purged
+46 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/foreman
+47 silly gunzTarPerm modes [ '755', '644' ]
+48 error tar.unpack untar error /Users/josephjung/.npm/foreman/1.4.1/package.tgz
+49 verbose unlock done using /Users/josephjung/.npm/_locks/foreman-97494eb38f3bd7df.lock for /usr/local/lib/node_modules/foreman
+50 verbose fstream_path /usr/local/lib/node_modules/foreman
+51 verbose fstream_type Directory
+52 verbose fstream_class DirWriter
+53 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/foreman'
+53 verbose stack     at Error (native)
+54 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+54 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+54 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+55 verbose cwd /Users/josephjung/zugzug/grocery_app
+56 error Darwin 14.5.0
+57 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "foreman"
+58 error node v4.0.0
+59 error npm  v2.14.3
+60 error path /usr/local/lib/node_modules/foreman
+61 error code EACCES
+62 error errno -13
+63 error syscall mkdir
+64 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/foreman'
+64 error     at Error (native)
+64 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/foreman']
+64 error   errno: -13,
+64 error   code: 'EACCES',
+64 error   syscall: 'mkdir',
+64 error   path: '/usr/local/lib/node_modules/foreman',
+64 error   fstream_type: 'Directory',
+64 error   fstream_path: '/usr/local/lib/node_modules/foreman',
+64 error   fstream_class: 'DirWriter',
+64 error   fstream_stack:
+64 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+64 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+64 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+65 error Please try running this command again as root/Administrator.
+66 verbose exit [ -13, true ]
+67 verbose unbuild lib/node_modules/foreman
+68 silly gentlyRm /usr/local/lib/node_modules/foreman is being purged from base /usr/local
+69 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/foreman
